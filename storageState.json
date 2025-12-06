@@ -1,0 +1,115 @@
+{
+  "cookies": [
+    {
+      "name": "did",
+      "value": "s%3Av0%3Aa6a4b5ea-755a-4d02-a464-109fc1661530%3A333217b600ffaf0c8d858ee567032c72244d7c1d201e72827cfdf4f70e70dad0.tdTZaNYMRBdrGHUIMeprNE8CxEDzuewIySFLwk0iQ2k",
+      "domain": "development-pictorlabs.us.auth0.com",
+      "path": "/",
+      "expires": 1796582282.978885,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "did_compat",
+      "value": "s%3Av0%3Aa6a4b5ea-755a-4d02-a464-109fc1661530%3A333217b600ffaf0c8d858ee567032c72244d7c1d201e72827cfdf4f70e70dad0.tdTZaNYMRBdrGHUIMeprNE8CxEDzuewIySFLwk0iQ2k",
+      "domain": "development-pictorlabs.us.auth0.com",
+      "path": "/",
+      "expires": 1796582282.979208,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0",
+      "value": "s%3AKNz3Tiia8hHOcuiMIbmoHk4T2GdNvFKc.3f3PUTbMmv1FRXI8hteCNhe%2FdDLM9PTLaOCQb3S%2Fwt0",
+      "domain": "development-pictorlabs.us.auth0.com",
+      "path": "/",
+      "expires": 1765283883.357185,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth0_compat",
+      "value": "s%3AKNz3Tiia8hHOcuiMIbmoHk4T2GdNvFKc.3f3PUTbMmv1FRXI8hteCNhe%2FdDLM9PTLaOCQb3S%2Fwt0",
+      "domain": "development-pictorlabs.us.auth0.com",
+      "path": "/",
+      "expires": 1765283883.357314,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_legacy_auth0.utbqnrfeSikbpUEJbXALjJGdADgVZOnU.is.authenticated",
+      "value": "true",
+      "domain": "development.prism.deepstain.com",
+      "path": "/",
+      "expires": 1765111084,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0.utbqnrfeSikbpUEJbXALjJGdADgVZOnU.is.authenticated",
+      "value": "true",
+      "domain": "development.prism.deepstain.com",
+      "path": "/",
+      "expires": 1765111084,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_legacy_auth0.utbqnrfeSikbpUEJbXALjJGdADgVZOnU.organization_hint",
+      "value": "%22org_1gI7ynRz8sGSoIxl%22",
+      "domain": "development.prism.deepstain.com",
+      "path": "/",
+      "expires": 1765111084,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0.utbqnrfeSikbpUEJbXALjJGdADgVZOnU.organization_hint",
+      "value": "%22org_1gI7ynRz8sGSoIxl%22",
+      "domain": "development.prism.deepstain.com",
+      "path": "/",
+      "expires": 1765111084,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth_token",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlE5ZnB5d1prOEhJNWFpaEhrNFQ0cCJ9.eyJpc3MiOiJodHRwczovL2RldmVsb3BtZW50LXBpY3RvcmxhYnMudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDY4Y2QxN2RmYmVlODZiYWI5ZTRhZTM0NCIsImF1ZCI6WyJodHRwczovL2RldmVsb3BtZW50LmFwaS5wcmlzbS5kZWVwc3RhaW4uY29tL2FwaSIsImh0dHBzOi8vZGV2ZWxvcG1lbnQtcGljdG9ybGFicy51cy5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzY1MDI0NjgzLCJleHAiOjE3NjUxMTEwODMsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJvcmdfaWQiOiJvcmdfMWdJN3luUno4c0dTb0l4bCIsIm9yZ19uYW1lIjoicGljdG9ybGFicy1oaXJpbmctb3JnIiwiYXpwIjoidXRicW5yZmVTaWticFVFSmJYQUxqSkdkQURnVlpPblUiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOmFncmVlbWVudHMiLCJyZWFkOmFubm90YXRpb25zIiwicmVhZDphdWRpdHMiLCJyZWFkOmZpbGVzIiwicmVhZDppbWFnZXMiLCJyZWFkOmluZmVyZW5jZV9qb2JzIiwicmVhZDpvcmdhbml6YXRpb25fc2V0dGluZ3MiLCJyZWFkOnByZWRpY3RvcnMiLCJyZWFkOnByb2plY3RzIiwicmVhZDpxY19qb2JzIiwicmVhZDpzbGlkZXMiLCJyZWFkOnN0YWluZXJzIiwicmVhZDp0aXNzdWVzIiwicmVhZDp1c2VycyIsInJlYWQ6dmlld2VycyJdfQ.M4TiBVVc_CHT-DYVxijmfOCUvdMxhmH_A9lAzW8ZpZAUjkD6L8fezCwh6F61K9CMtmfSHAYoRHrCVQqNNS_YrFBhT5UWjBcatb6An4lfEstckvRDhpwLuih9QqH82x6fS_dhQKUKngWryqTajfNEipJXgLlR-m0JXWo8Xmhmi2U5EjTYoUcGhdm2H4_ZbP9oFU_akRcZN7Jd2iR2e7b2W9UmPyQbgnOm6bOQg2FAqpTYTApHab1ggRuNX0b6WOik07144eMGBxaQVE026EBPR22NJVTzv9TbJDAW2dUbUEyHvD6_MNOPp7XI8Wy7VqHj6lt4hqpUFjQvc_kvgf7Klg",
+      "domain": "development.api.prism.deepstain.com",
+      "path": "/",
+      "expires": 1765111084.374739,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "csrftoken",
+      "value": "8lEZ6yHOoelo9ka3dRsq7jWRgt3UakuP",
+      "domain": ".prism.deepstain.com",
+      "path": "/",
+      "expires": 1796474288.34181,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://development.prism.deepstain.com",
+      "localStorage": [
+        {
+          "name": "upload_states",
+          "value": "[]"
+        }
+      ]
+    }
+  ]
+}
