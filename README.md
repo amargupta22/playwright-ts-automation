@@ -26,7 +26,7 @@ The report includes:
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js
 - npm package manager
 - Git
 
