@@ -2,6 +2,27 @@
 
 Automated test suite for the Prism Virtual Stain Hub application using Playwright with TypeScript. This framework implements the Page Object Model (POM) pattern for maintainable and scalable test automation.
 
+## 📊 Test Results
+
+[![Tests](https://img.shields.io/badge/tests-14%20passed-brightgreen)](https://github.com/amargupta22/pictorlabs-automation)
+[![Playwright](https://img.shields.io/badge/playwright-latest-blue)](https://playwright.dev)
+[![TypeScript](https://img.shields.io/badge/typescript-5.x-blue)](https://www.typescriptlang.org/)
+
+**Latest Test Run:** ✅ All 14 tests passing (Execution time: ~2.6 minutes)
+
+### 📈 View Test Reports
+After running tests, view the interactive HTML report:
+```bash
+npx playwright show-report
+```
+
+The report includes:
+- ✅ Test execution status and timeline
+- 📸 Screenshots of failures
+- 🎥 Video recordings of test runs
+- 📊 Detailed step-by-step execution logs
+- 🔍 Network activity and console logs
+
 ## 🚀 Quick Start
 
 ### Prerequisites
