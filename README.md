@@ -10,6 +10,10 @@ Automated test suite for the Prism Virtual Stain Hub application using Playwrigh
 
 **Latest Test Run:** ✅ All 14 tests passing (Execution time: ~2.6 minutes)
 
+<p align="center">
+  <img src=".github/images/report_screenshot.png" alt="Test Report Screenshot" width="800"/>
+</p>
+
 ### 📈 View Test Reports
 After running tests, view the interactive HTML report:
 ```bash
