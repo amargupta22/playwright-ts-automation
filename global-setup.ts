@@ -1,5 +1,6 @@
 import { chromium, FullConfig } from '@playwright/test';
 import { LoginPage } from './pages/LoginPage';
+import { DashboardPage } from './pages/DashboardPage';
 import { testCredentials } from './fixtures/testCredentials';
 
 async function globalSetup(config: FullConfig) {
@@ -10,6 +11,7 @@ async function globalSetup(config: FullConfig) {
   const page = await context.newPage();
 
   const login = new LoginPage(page);
+  const dashboard = new DashboardPage(page);
 
   await login.open();
   await login.startAuth0();
@@ -18,11 +20,14 @@ async function globalSetup(config: FullConfig) {
   // Wait for navigation to complete and ensure all cookies are set
   await page.waitForLoadState('networkidle', { timeout: 30000 });
   
-  // Verify we're on the dashboard (successful login)
-  await page.waitForSelector('[data-testid="dashboard"]', { timeout: 10000 }).catch(() => {
-    // If specific selector fails, just wait for URL change
-    console.log('Dashboard selector not found, checking URL...');
-  });
+   // Verify we're on the dashboard (successful login)
+  try {
+    await dashboard.verifyOrganizationActivityVisible();
+    console.log('✅ Dashboard loaded successfully');
+  } catch (error) {
+    console.error('❌ Dashboard verification failed - Authentication may have failed');
+    throw new Error('GlobalSetup failed: Dashboard not loaded. Please check credentials and try again.');
+  }
   
   // Additional wait to ensure session cookies are set
   await page.waitForTimeout(2000);

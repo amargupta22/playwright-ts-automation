@@ -1,6 +1,5 @@
 import { expect, Page } from '@playwright/test';
 import { BasePage } from './BasePage';
-import { time } from 'console';
 
 export class LoginPage extends BasePage {
   readonly signInAuth0Button;
@@ -38,6 +37,6 @@ export class LoginPage extends BasePage {
   }
 
   async expectLoggedIn() {
-    await expect(this.organizationActivityText).toBeVisible({ timeout:60000  });
+    await expect(this.organizationActivityText).toBeVisible({ timeout: 60000 });
   }
 }
