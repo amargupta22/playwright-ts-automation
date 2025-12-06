@@ -5,7 +5,7 @@ Automated test suite for the Prism Virtual Stain Hub application using Playwrigh
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js
 - npm package manager
 - Git
 
