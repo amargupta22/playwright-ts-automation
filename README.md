@@ -6,7 +6,17 @@ Automated test suite for the Prism Virtual Stain Hub application using Playwrigh
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- npm or yarn package manager
+- npm package manager
+- Git
+
+### Clone Repository
+```bash
+# Clone the repository
+git clone https://github.com/amargupta22/pictorlabs-automation.git
+
+# Navigate to project directory
+cd pictorlabs-automation
+```
 
 ### Installation
 ```bash
@@ -204,48 +214,6 @@ test.describe('Dashboard - Overview', () => {
 });
 ```
 
-### Best Practices
-
-1. **Use Page Objects**: Always interact with pages through page objects
-   ```typescript
-   // ✅ Good
-   await dashboard.clickOverviewTab();
-   
-   // ❌ Bad
-   await page.click('[data-testid="overview-tab"]');
-   ```
-
-2. **Descriptive Test Names**: Use clear, action-oriented test names
-   ```typescript
-   test('User can filter slides by tissue type')
-   test('Upload validates file size restrictions')
-   ```
-
-3. **Independent Tests**: Each test should be self-contained
-   ```typescript
-   // Each test starts from a known state (authenticated via storage state)
-   test('Test A', async ({ page }) => { /* ... */ });
-   test('Test B', async ({ page }) => { /* ... */ });
-   ```
-
-4. **Explicit Waits**: Use appropriate wait strategies
-   ```typescript
-   // Wait for network idle
-   await page.waitForLoadState('networkidle');
-   
-   // Wait for specific element
-   await page.waitForSelector('[data-testid="dashboard"]');
-   
-   // Use fallback strategies
-   await page.waitForLoadState('domcontentloaded').catch(() => {});
-   ```
-
-5. **Error Handling**: Handle permission-disabled elements
-   ```typescript
-   // Demo accounts have permission-disabled wrappers
-   await expect(uploadButton).toHaveAttribute('data-permission-disabled', 'true');
-   ```
-
 ## 🧪 Test Coverage
 
 ### Modules Tested
@@ -263,7 +231,7 @@ test.describe('Dashboard - Overview', () => {
 - 🔄 Average execution time: ~1.3 minutes (parallel execution)
 - 🎯 2-3 focused tests per module
 
-## 🐛 Debugging
+## Test Reports with videos and traces
 
 ### View Test Trace
 ```bash
@@ -271,80 +239,11 @@ test.describe('Dashboard - Overview', () => {
 npx playwright show-trace test-results/<test-name>/trace.zip
 ```
 
-### Run in Debug Mode
-```bash
-# Run with Playwright Inspector
-npx playwright test --debug
-
-# Run specific test with debug
-npx playwright test login.spec.ts --debug
-```
-
 ### View HTML Report
 ```bash
 # Generate and view report
 npx playwright show-report
 ```
-
-## 🔧 Troubleshooting
-
-### Session Expired Errors
-If tests fail with "session expired" errors:
-```bash
-# Regenerate storage state
-rm storageState.json
-npx playwright test tests/dashboard/dashboard-overview.spec.ts --headed
-```
-
-### Strict Mode Violations
-If locators match multiple elements:
-```typescript
-// Use .first() for multiple matches
-await page.locator('[data-testid="button"]').first().click();
-
-// Or scope to specific container
-await page.locator('.container').getByText('Submit').click();
-```
-
-### Network Timeouts
-For slow-loading pages:
-```typescript
-// Increase timeout
-await page.waitForLoadState('networkidle', { timeout: 30000 });
-
-// Or use domcontentloaded as fallback
-await page.waitForLoadState('domcontentloaded');
-```
-
-## 📊 CI/CD Integration
-
-### GitHub Actions Example
-```yaml
-name: Playwright Tests
-on: [push, pull_request]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm ci
-      - run: npx playwright install --with-deps
-      - run: npx playwright test
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-```
-
-## 📚 Resources
-
-- [Playwright Documentation](https://playwright.dev)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-- [Page Object Model Pattern](https://playwright.dev/docs/pom)
 
 ## 👥 Maintenance
 
@@ -367,7 +266,3 @@ To update test credentials:
 3. Run any test to regenerate storage state
 
 ---
-
-**Framework Version:** 1.0.0  
-**Playwright Version:** Latest  
-**Last Updated:** December 2025
