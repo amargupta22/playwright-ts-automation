@@ -37,10 +37,10 @@ The report includes:
 ### Clone Repository
 ```bash
 # Clone the repository
-git clone https://github.com/amargupta22/pictorlabs-automation.git
+git clone https://github.com/amargupta22/playwright-ts-automation.git
 
 # Navigate to project directory
-cd pictorlabs-automation
+cd playwright-ts-automation
 ```
 
 ### Installation
